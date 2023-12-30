@@ -4,7 +4,8 @@
   "description": "simple package, which calculates the file type according to its extension",
   "main": "index.js",
   "scripts": {
-    "lint": "standard"
+    "lint": "standard",
+    "debug": "node --inspect-brk lib/index.js"
   },
   "keywords": [],
   "author": "",
