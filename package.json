@@ -1,0 +1,15 @@
+{
+  "name": "extype",
+  "version": "1.0.0",
+  "description": "simple package, which calculates the file type according to its extension",
+  "main": "index.js",
+  "scripts": {
+    "lint": "standard"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "standard": "17.1.0"
+  }
+}
