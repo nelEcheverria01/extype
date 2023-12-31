@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "lint": "standard",
-    "debug": "node --inspect-brk lib/index.js"
+    "debug": "node --inspect-brk lib/"
   },
   "keywords": [],
   "author": "",
