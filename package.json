@@ -5,12 +5,14 @@
   "main": "index.js",
   "scripts": {
     "lint": "standard",
-    "debug": "node --inspect-brk lib/"
+    "debug": "node --inspect-brk lib/",
+    "test": "ava"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "ava": "6.0.1",
     "standard": "17.1.0"
   }
 }
