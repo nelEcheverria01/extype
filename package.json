@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "simple package, which calculates the file type according to its extension",
   "main": "index.js",
+  "bin": {
+    "extype": "bin/"
+  },
   "scripts": {
     "lint": "standard",
     "debug": "node --inspect-brk lib/",
