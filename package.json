@@ -2,9 +2,9 @@
   "name": "extype",
   "version": "1.0.0",
   "description": "simple package, which calculates the file type according to its extension",
-  "main": "index.js",
+  "main": "lib/index.js",
   "bin": {
-    "extype": "bin/"
+    "extype": "bin/index.js"
   },
   "scripts": {
     "lint": "standard",
@@ -12,8 +12,21 @@
     "test": "ava",
     "coverage": "nyc npm run test"
   },
-  "keywords": [],
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:nelEcheverria01/extype.git"
+  },
+  "engines": {
+    "node": ">=16.20.2"
+  },
+  "keywords": [
+    "file extension",
+    "extensions",
+    "cli tools",
+    "tool",
+    "file"
+  ],
+  "author": "Nelson Echeverria <nelsonecheverria100@gmail.com>",
   "license": "MIT",
   "devDependencies": {
     "ava": "6.0.1",
