@@ -1,7 +1,7 @@
 'use strict'
 
 const test = require('ava')
-const { getFileFromArgs } = require('../../../lib/utils')
+const { getCommandLineArgs } = require('../../../lib/utils')
 
 const sampleFile = 'index.js'
 const expected = { filename: sampleFile, ext: '.js' }
@@ -11,7 +11,7 @@ test.before(_ => {
 })
 
 test('should return an object with the filename and ext (extension) properties', t => {
-  const { filename, ext } = getFileFromArgs()
+  const { filename, ext } = getCommandLineArgs().info_file
 
   t.is(filename, expected.filename)
   t.is(ext, expected.ext)
