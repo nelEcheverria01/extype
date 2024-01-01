@@ -4,7 +4,7 @@ const test = require('ava')
 const { getFileFromArgs } = require('../../../lib/utils')
 const ExtypeError = require('../../../lib/generic-exception')
 
-test.before(_t => {
+test.before(_ => {
   process.argv[2] = ''
 })
 

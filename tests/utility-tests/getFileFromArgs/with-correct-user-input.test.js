@@ -3,16 +3,16 @@
 const test = require('ava')
 const { getFileFromArgs } = require('../../../lib/utils')
 
-/** sample input/file for testing */
-const sample = { filename: 'index.js', ext: '.js' }
+const sampleFile = 'index.js'
+const expected = { filename: sampleFile, ext: '.js' }
 
-test.before(t => {
-  process.argv[2] = sample.filename
+test.before(_ => {
+  process.argv[2] = sampleFile
 })
 
 test('should return an object with the filename and ext (extension) properties', t => {
   const { filename, ext } = getFileFromArgs()
 
-  t.is(filename, sample.filename)
-  t.is(ext, sample.ext)
+  t.is(filename, expected.filename)
+  t.is(ext, expected.ext)
 })
