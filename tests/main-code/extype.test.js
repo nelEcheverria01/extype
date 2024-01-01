@@ -11,8 +11,8 @@ test.before(_ => {
 })
 
 test('the type property, returned by extype(), must be equal to \'CSS\'; trying main.css', t => {
-  const { filename, type } = extype()
+  const { result } = extype()
 
-  t.is(filename, expected.filename)
-  t.is(type, expected.type)
+  t.is(result.filename, expected.filename)
+  t.is(result.type, expected.type)
 })
