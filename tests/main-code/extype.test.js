@@ -1,7 +1,7 @@
 'use strict'
 
 const test = require('ava')
-const extype = require('../lib')
+const extype = require('../../lib')
 
 const sampleFile = 'main.css'
 const expected = { filename: sampleFile, type: 'CSS' }
