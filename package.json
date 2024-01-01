@@ -9,13 +9,15 @@
   "scripts": {
     "lint": "standard",
     "debug": "node --inspect-brk lib/",
-    "test": "ava"
+    "test": "ava",
+    "coverage": "nyc npm run test"
   },
   "keywords": [],
   "author": "",
   "license": "MIT",
   "devDependencies": {
     "ava": "6.0.1",
+    "nyc": "15.1.0",
     "standard": "17.1.0"
   }
 }
