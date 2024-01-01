@@ -9,10 +9,11 @@
  * @auhtor Nelson Echeverria
  */
 const extype = require('../lib')
+const prefix = '[extype]'
 
 try {
   const { filename, type } = extype()
-  console.log('file:', filename, 'type', type)
+  console.log(prefix, 'file:', filename, 'type:', type)
 } catch ({ message }) {
-  console.log('error:', message)
+  console.log(prefix, 'error:', message)
 }
