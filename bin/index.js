@@ -2,18 +2,18 @@
 
 'use strict'
 
-/**
- * Extype is a command line tool that provides the file
- * type, which was supplied from the command line
- *
- * @auhtor Nelson Echeverria
- */
 const extype = require('../lib')
-const prefix = '[extype]'
+const { getPkgVersion } = require('../lib/utils')
+const { HELP_CMD } = require('../lib/constants')
 
 try {
-  const { filename, type } = extype()
-  console.log(prefix, 'file:', filename, 'type:', type)
+  const { filename, type, flags } = extype()
+  if (filename && type) console.log(`output: ${filename} >> ${type}`)
+
+  if (flags) {
+    if (flags.help) console.log(`help: \n ${HELP_CMD}`)
+    if (flags.version) console.log(`version: ${getPkgVersion()}`)
+  }
 } catch ({ message }) {
-  console.log(prefix, 'error:', message)
+  console.log(`error: ${message}`)
 }
