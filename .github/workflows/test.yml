@@ -1,0 +1,16 @@
+name: check-code
+
+on:
+ push:
+  branches: [main]
+
+jobs:
+ testing_code:
+  runs-on: ubuntu-latest
+  steps:
+   - uses: actions/checkout@v2
+   - uses: actions/setup-node@v1
+     with:
+      node-version: 18.18.2
+   - run: npm ci
+   - run: npm run test:ci

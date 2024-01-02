@@ -10,7 +10,8 @@
     "lint": "standard",
     "debug": "node --inspect-brk lib/",
     "test": "ava",
-    "coverage": "nyc npm run test"
+    "coverage": "nyc npm run test",
+    "test:ci": "npm run lint && npm run test"
   },
   "repository": {
     "type": "git",
