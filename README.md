@@ -2,6 +2,8 @@
 
 Extype is a command line tool that calculates the file type based on its extension.
 
+[![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+[![check-code](https://github.com/nelEcheverria01/extype/actions/workflows/test.yml/badge.svg)](https://github.com/nelEcheverria01/extype/actions/workflows/test.yml)
 
 # motivation
 
