@@ -71,4 +71,4 @@ extype, returns an error, if it finds an incompatible flag/option, oh that it is
 
 # license
 
-made inder MIT license
+made under MIT license
